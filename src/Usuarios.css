@@ -1,0 +1,22 @@
+/* CrudMaestros.css */
+.main-content {
+    margin-left: 250px; /* Ajusta según el diseño */
+  }
+  
+  .header {
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+  
+  .nav-link {
+    color: #007bff;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+  }
+  

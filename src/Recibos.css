@@ -1,0 +1,152 @@
+body {
+    background-color: #e9ecef; /* Color de fondo suave */
+    font-family: 'Arial', sans-serif;
+}
+
+.recibo-container {
+    max-width: 850px; /* Ancho máximo */
+    width: 90%; /* Ancho adaptable */
+    border: 1px solid #b8c3cf; /* Color de borde azul */
+    padding: 2rem; /* Padding responsivo */
+    margin: 2rem auto; /* Margen vertical adaptado */
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.centered-button {
+    display: block;
+    margin: 0 auto;
+  }
+.header {
+    text-align: center;
+    margin-bottom: 2rem; /* Espaciado adaptable */
+}
+
+.header h1 {
+    font-size: 2rem; /* Tamaño adaptable */
+    margin: 0;
+    color: #007bff; /* Color del título */
+}
+
+.header h2 {
+    font-size: 1.5rem; /* Tamaño adaptable */
+    margin: 0.5rem 0;
+    color: #6c757d; /* Color del subtítulo */
+}
+
+.logo {
+    max-width: 100px; /* Ajustar el tamaño del logo para pantallas pequeñas */
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.mesa-directiva {
+    border: 1px solid #007bff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+    justify-content: space-between;
+    margin-bottom: 1.5rem; /* Espaciado adaptable */
+}
+
+.section div {
+    flex: 1 1 45%; /* Permitir que los divs crezcan y se reduzcan */
+    font-size: 1rem; /* Tamaño adaptable */
+    margin: 0.5rem; /* Margen responsivo */
+}
+
+.section .right {
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #007bff; /* Color de borde azul */
+    text-align: center;
+    font-size: 1rem; /* Tamaño adaptable */
+}
+
+th, td {
+    padding: 1rem; /* Padding adaptable */
+}
+
+.totales {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+    justify-content: space-between;
+    margin-bottom: 2rem; /* Espaciado adaptable */
+}
+
+.totales div {
+    flex: 1 1 48%; /* Ajustar el tamaño de las columnas */
+    text-align: right;
+    font-size: 1rem; /* Tamaño adaptable */
+}
+
+.alerta {
+    font-size: 1rem; /* Tamaño adaptable */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #dc3545; /* Color de alerta rojo */
+}
+
+.cuadro-amarillo {
+    background-color: #fff3cd; /* Color de fondo amarillo suave */
+    border: 1px solid #ffc107; /* Borde amarillo */
+    padding: 1rem; /* Mayor padding */
+    font-size: 1rem; /* Tamaño adaptable */
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.nota {
+    font-size: 1rem; /* Tamaño adaptable */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.total-recibo {
+    font-size: 2rem; /* Tamaño adaptable */
+    font-weight: bold;
+    text-align: right;
+    color: #007bff; /* Color del total */
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 576px) {
+    .recibo-container {
+        padding: 1rem; /* Menos padding en dispositivos pequeños */
+    }
+
+    .header h1, .header h2 {
+        font-size: 1.5rem; /* Reducir tamaño del texto en móvil */
+    }
+
+    .section div, .totales div {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .alerta, .cuadro-amarillo, .nota {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .total-recibo {
+        font-size: 1.5rem; /* Tamaño de total más pequeño */
+    }
+}

@@ -1,0 +1,137 @@
+/* App.css */
+
+/* Reglas generales */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos específicos de la aplicación */
+.login-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  width: 90%; /* Cambiado a 90% para adaptarse mejor en pantallas pequeñas */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.fb-button {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.fb-button:hover {
+  background-color: #2d4373;
+}
+
+.background-container {
+  position: relative;
+  background-image: url('https://github.com/FerRosas22/job/raw/main/Inic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.background-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Ajusta el color y la opacidad aquí */
+  z-index: 1; /* Asegúrate de que esté encima del fondo */
+}
+
+.login-row {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Ajusta el ancho máximo si es necesario */
+  z-index: 2; /* Asegúrate de que esté encima de la capa con opacidad */
+  display: flex; /* Cambiado para usar flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.image-column {
+  background-image: url('https://github.com/FerRosas22/job/raw/main/Logo.png');
+  background-size: contain; /* Ajusta la imagen para que se ajuste al contenedor sin distorsionarse */
+  background-position: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 100%;
+  max-width: 80%; /* Cambiado para ser más adaptable */
+  height: auto; /* Permite que la altura se ajuste proporcionalmente */
+  min-height: 200px; /* Ajustado a un mínimo más pequeño */
+  background-repeat: no-repeat;
+  margin: 0 auto; /* Centra la imagen */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 20px; /* Reduce el padding en pantallas más pequeñas */
+  }
+
+  .login-box h2 {
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente */
+  }
+
+  .image-column {
+    max-width: 90%; /* Aumenta el ancho máximo en pantallas pequeñas */
+    min-height: 150px; /* Ajusta el mínimo de altura */
+  }
+}

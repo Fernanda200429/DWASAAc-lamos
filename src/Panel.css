@@ -1,0 +1,143 @@
+/* src/components/Panel.css */
+
+body {
+    background: #f8f9fa;
+    margin: 0; /* Eliminar márgenes predeterminados */
+    font-family: Arial, sans-serif; /* Establecer una fuente base */
+}
+
+.header {
+    position: static;
+    width: 100%;
+    background-color: #ffffff; 
+    padding: 1rem; /* Cambiar a rem para mejor adaptabilidad */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex; /* Usar flexbox para alinear contenido */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    background-color: #343a40;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    width: 250px; /* Ancho normal para pantallas grandes */
+    padding-top: 20px;
+    transition: width 0.3s; /* Animación suave al cambiar el tamaño */
+}
+
+.main-content {
+    margin-left: 250px; /* Espacio para la barra lateral */
+    margin-top: 70px; /* Espacio para la cabecera */
+    padding: 2rem; /* Cambiar a rem para mejor adaptabilidad */
+    transition: margin-left 0.3s; /* Suave transición para el contenido principal */
+}
+
+.logo img {
+    max-width: 90%;
+    height: auto;
+}
+
+.nav-link {
+    color: #ffffff;
+    transition: color 0.3s;
+    text-decoration: none; /* Sin subrayado */
+}
+
+.nav-link i {
+    margin-right: 0.5rem; /* Espacio entre el icono y el texto */
+}
+
+/* Efecto al pasar el ratón */
+.nav-link:hover {
+    color: #adb5bd; /* Color al pasar el mouse */
+}
+
+.logout-btn {
+    background-color: #343a40;
+    border-color: #343a40;
+    transition: background-color 0.3s;
+    color: #ffffff;
+}
+
+.logout-btn:hover {
+    background-color: #292f36;
+}
+
+.vertical-line {
+    border-left: 1px solid #ccc;
+    height: 30px;
+}
+
+.custom-label {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #333;
+    border-radius: 3px;
+}
+
+/* Media queries para adaptar el diseño */
+@media (max-width: 768px) {
+    .header {
+        padding: 0.5rem; /* Menos padding en pantallas pequeñas */
+    }
+
+    .main-content {
+        margin-left: 70px; /* Reducir espacio para la barra lateral en pantallas pequeñas */
+        padding: 1rem; /* Menos padding en pantallas pequeñas */
+    }
+
+    .sidebar {
+        width: 70px; /* Reducir tamaño de la barra lateral */
+    }
+
+    .nav-link {
+        font-size: 0.9rem; /* Reducir tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Cambiar a columna en pantallas muy pequeñas */
+        align-items: flex-start; /* Alinear al inicio */
+    }
+
+    .nav-link {
+        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+        margin-bottom: 0.5rem; /* Espacio entre enlaces */
+    }
+
+    /* Se mantiene la barra lateral, pero con un ancho más compacto */
+    .sidebar {
+        width: 70px; /* Mantener el ancho reducido */
+        padding-top: 10px; /* Menos padding */
+    }
+
+    .main-content {
+        margin-left: 70px; /* Sin margen izquierdo en pantallas muy pequeñas */
+        padding: 1rem; /* Menos padding en pantallas muy pequeñas */
+    }
+}
+.main-content {
+    padding: 20px;
+    background-color: #f8f9fa; /* Color de fondo más suave */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .header-text h2 {
+    margin-top: 20px;
+    color: #343a40; /* Color del título */
+  }
+  
+  .header-text h5 {
+    color: #6c757d; /* Color del subtítulo */
+  }
+  
